@@ -1,0 +1,10 @@
+.paper {
+    background: '#FFFFFF';
+    border-radius: 0px;
+    padding: 4px;
+    height: 100%;
+}
+
+.header {
+    background:  linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(124,137,157,1) 50%, rgba(255,255,255,1) 100%);
+}

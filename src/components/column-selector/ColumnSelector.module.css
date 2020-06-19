@@ -1,0 +1,21 @@
+.formControl {
+    width: 100%;
+}
+
+.formControl > div {
+    padding: 20px 10px;
+    background: #9BA1AB;
+    border: 4px solid white;
+}
+
+.formControl > label{
+    background: rgba(255, 255, 255, 0);
+}
+
+.formControl > label > p{
+    background: rgba(255, 255, 255, 0);
+}
+
+.formControl * {
+    background: #9BA1AB;
+}

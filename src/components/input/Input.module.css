@@ -1,0 +1,21 @@
+.input {
+    width: 100%;
+}
+
+.input > div {
+    padding: 20px 10px;
+    background: #9BA1AB;
+    border: 4px solid white;
+}
+
+.input > label{
+    background: rgba(255, 255, 255, 0);
+}
+
+.input > label > p{
+    background: rgba(255, 255, 255, 0);
+}
+
+.input * {
+    background: #9BA1AB;
+}
