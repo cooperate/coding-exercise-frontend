@@ -1,10 +1,49 @@
 .paper {
-    background: '#FFFFFF';
+    background: #FFFFFF;
     border-radius: 0px;
     padding: 4px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background:  linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(124,137,157,1) 50%, rgba(255,255,255,1) 100%);
+    flex-basis: 15%;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;
+    flex-basis: 85%;
+}
+
+.list > * {
+    min-height: 100px;
+}
+
+.listItemEven {
+    background: #BCC0C7;
+    color: #FAFAFB;
+    height: 100%;
+}
+
+
+.listItemEven:hover {
+    background: rgba(121, 129, 143, 1);
+}
+
+.listItemOdd {
+    background: #F2F3F4;
+    color: #7C8391;
+    height: 100%;
+}
+
+.listItemOdd:hover {
+    background: #ffffff;    
 }

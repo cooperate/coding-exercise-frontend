@@ -1,0 +1,4 @@
+.log {
+    overflow: scroll;
+    overflow-x: hidden;
+}

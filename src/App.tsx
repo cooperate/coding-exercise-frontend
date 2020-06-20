@@ -43,7 +43,7 @@ const App = () => (
     <ThemeProvider theme={theme}>
       <Provider store={store}>
         <Box className={styles.wrapper}>
-          <Container className={styles.container}>
+          <div className={styles.container}>
             <div className={clsx(styles.gridItem, styles.gridHeader)}>
               <Header />
             </div>
@@ -59,10 +59,10 @@ const App = () => (
             <div className={clsx(styles.gridItem, styles.gridAddItem)}>
               <ColumnAddItem />
             </div>
-            <div>
+            <div className={clsx(styles.gridItem, styles.gridLogger)}>
               <Logger />
             </div>
-          </Container>
+          </div>
         </Box>
       </Provider>
     </ThemeProvider>

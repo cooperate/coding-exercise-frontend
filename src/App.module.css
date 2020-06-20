@@ -1,22 +1,44 @@
 .wrapper {
-  height: 100vh;
-  width: 100vw;
   background: rgba(121, 129, 143, 1);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
   overflow: scroll;
+  overflow-x: hidden;
 }
 .container {
-  display: grid;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 
 .gridItem {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.gridItem > * {
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 800px) {
   .container {
+    display: grid;
+    grid-template-columns: minmax(auto, 1fr);
+    grid-gap: 20px;
+    padding: 50px;
+    height: calc(100% - 50px);
     grid-template-columns: repeat(3, minmax(100px, 1fr));
-    grid-template-rows: repeat(7, minmax(50px, 1fr));
+    grid-template-rows: repeat(14, minmax(50px, 1fr));
   }
+  
+  .gridItem {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
   .gridHeader {
     grid-column: 1 / span 3;
     grid-row: 1 / span 2;
@@ -24,21 +46,26 @@
 
   .gridSearch {
     grid-column: 1 / span 1;
-    grid-row: 7 / span 1;
+    grid-row: 14 / span 1;
   }
 
   .gridTransferColumns {
     grid-column: 2 / span 2;
-    grid-row: 2 / span 5;
+    grid-row: 3 / span 12;
   }
 
   .gridAddOptions {
     grid-column: 1 / span 1;
-    grid-row: 2 / span 2;
+    grid-row: 3 / span 3;
   }
 
   .gridAddItem {
     grid-column: 1 / span 1;
-    grid-row: 6 / span 1;
+    grid-row: 12 / span 1;
+  }
+
+  .gridLogger {
+    grid-column: 1 / span 1;
+    grid-row: 8 / span 3;
   }
 }

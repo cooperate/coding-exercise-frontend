@@ -5,6 +5,8 @@ import Input from "../input/Input";
 
 const EnterOption = ({label, setValue}: {label: string, setValue: any}) => (
   <Input
+    fullWidth
+    variant="filled"
     InputLabelProps={{
       color: "secondary",
     }}

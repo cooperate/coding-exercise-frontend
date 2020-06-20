@@ -1,11 +1,26 @@
 .input {
     width: 100%;
+    height: 100%;
+}
+
+.input input {
+    color: white;
+    font-size: 1.8rem;
 }
 
 .input > div {
     padding: 20px 10px;
     background: #9BA1AB;
     border: 4px solid white;
+    height: 100%;
+}
+
+.input > div:hover {
+    background: #9BA1AB;
+}
+
+.input > div:active {
+    background: #9BA1AB;
 }
 
 .input > label{
@@ -18,4 +33,8 @@
 
 .input * {
     background: #9BA1AB;
+}
+
+.input:hover {
+    background: none;
 }

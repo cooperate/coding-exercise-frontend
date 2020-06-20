@@ -1,23 +1,10 @@
 import React from "react";
-import InputBase from "@material-ui/core/InputBase";
+import Input from "../input/Input";
+import InputAdornment from '@material-ui/core/InputAdornment';
 import SearchIcon from "@material-ui/icons/Search";
 import { fade, makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
-  search: {
-    position: "relative",
-    borderRadius: theme.shape.borderRadius,
-    backgroundColor: fade(theme.palette.common.white, 0.15),
-    "&:hover": {
-      backgroundColor: fade(theme.palette.common.white, 0.25),
-    },
-    marginLeft: 0,
-    width: "100%",
-    [theme.breakpoints.up("sm")]: {
-      marginLeft: theme.spacing(1),
-      width: "auto",
-    },
-  },
   searchIcon: {
     padding: theme.spacing(0, 2),
     height: "100%",
@@ -52,20 +39,22 @@ const Search = (props: any) => {
     updateSearchTerm(e.target.value);
   }
   return (
-    <div className={classes.search}>
-      <div className={classes.searchIcon}>
-        <SearchIcon />
-      </div>
-      <InputBase
-        placeholder="SEARCH"
-        classes={{
-          root: classes.inputRoot,
-          input: classes.inputInput,
+      <Input
+        fullWidth
+        variant="filled"
+        InputLabelProps={{
+          color: "secondary",
         }}
-        inputProps={{ "aria-label": "search" }}
+        label="SEARCH"
         onChange={handleChange}
+        InputProps={{
+          startAdornment: (
+            <InputAdornment position="start">
+              <SearchIcon />
+            </InputAdornment>
+          ),
+        }}
       />
-    </div>
   );
 };
 export default Search;

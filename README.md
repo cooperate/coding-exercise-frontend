@@ -1,6 +1,10 @@
+# Lists Application Frontend
+
+This application presents two lists with persistent state.  Utilises Redux and Redux-Thunk for managing state.  Built in typescript.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Build the application
 
 In the project directory, you can run:
 

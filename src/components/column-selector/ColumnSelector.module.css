@@ -9,13 +9,21 @@
 }
 
 .formControl > label{
-    background: rgba(255, 255, 255, 0);
+    z-index: 1;
+    color: rgba(255, 255, 255, 0);
+    background: none;
 }
 
 .formControl > label > p{
-    background: rgba(255, 255, 255, 0);
+    z-index: 1;
+    color: rgba(255, 255, 255, 0);
+    background: none;
 }
 
 .formControl * {
     background: #9BA1AB;
+}
+
+.formControl .MuiInput-formControl {
+    margin-top: 0;
 }

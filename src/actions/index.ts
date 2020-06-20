@@ -36,7 +36,12 @@ export const createItemSuccess = (item: IItem) => ({
 });
 
 export const createItem = (itemProperties: any) => async (dispatch: any) => {
-  const itemResponse = await Api.createOneItem(itemProperties);
+  let itemResponse;
+  try{
+    itemResponse = await Api.createOneItem(itemProperties);
+  } catch(error) {
+    throw(error);
+  }
   dispatch(createItemSuccess(itemResponse));
 };
 

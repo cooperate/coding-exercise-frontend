@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { FormControl, MenuItem, Select, InputLabel, Typography } from "@material-ui/core";
+import { FormControl, MenuItem, Select, InputLabel, Typography, Box } from "@material-ui/core";
 import styles from "./ColumnSelector.module.css";
 
 const ColumnSelector = ({ items, setColumn }: { items: any, setColumn: any }) => {
-  const [columnName, setColumnName] = useState("");
+  const [columnName, setColumnName] = useState("one");
 
   const handleChange = (event: any) => {
     setColumnName(event.target.value);
@@ -16,16 +16,16 @@ const ColumnSelector = ({ items, setColumn }: { items: any, setColumn: any }) =>
   return (
     <div>
       <FormControl className={styles.formControl}>
-        <InputLabel id="demo-simple-select-label"><Typography color="secondary">CHOOSE COLUMN</Typography></InputLabel>
+        <InputLabel id="column-selector">CHOOSE COLUMN</InputLabel>
         <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
+          labelId="column-selector"
           color="primary"
           value={columnName}
           onChange={handleChange}
+          variant="filled"
         >
           {items.map((item: any) => (
-            <MenuItem value={item}>{item}</MenuItem>
+            <MenuItem value={item}><Box color="white" fontSize="1.8rem">{item}</Box></MenuItem>
           ))}
         </Select>
         

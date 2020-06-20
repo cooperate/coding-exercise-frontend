@@ -10,7 +10,7 @@ const Header = () => {
     }, []);
     return (
     <Box>
-        <Typography color="primary" variant="h1"><Box fontStyle="italic">Marvelous!</Box></Typography>
+        <Typography color="primary" variant="h1"><Box className={styles.header}>Marvelous!</Box></Typography>
         <Typography><Box color="#8EFEED">Sort and add items to two lists.</Box></Typography>
     </Box>
 )

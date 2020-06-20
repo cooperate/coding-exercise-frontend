@@ -1,9 +1,9 @@
-.list:nth-child(even) {
+.listItem:nth-child(even) {
     background: #BCC0C7;
     color: #FAFAFB;
 }
 
-.list:nth-child(odd) {
+.listItem:nth-child(odd) {
     background: #F2F3F4;
     color: #7C8391;
 }
