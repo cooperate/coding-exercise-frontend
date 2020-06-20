@@ -1,11 +1,15 @@
 .columns {
   display: flex;
+  flex-direction: column;
 }
 
 .columns > *:nth-child(1) {
   margin-right: 0px;
 }
 @media (min-width: 800px) {
+  .columns {
+    flex-direction: row;
+  }
   .columns > *:nth-child(1) {
     margin-right: 20px;
   }
