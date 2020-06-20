@@ -4,6 +4,8 @@ This application presents two lists with persistent state.  Utilises Redux and R
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+The frontend application runs on port 3000.
+
 ## Build the application
 
 In the project directory, you can run:
