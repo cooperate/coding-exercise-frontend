@@ -2,10 +2,11 @@ import React from 'react';
 import List from '@material-ui/core/List';
 import LoggerItem from '../logger-item/LoggerItem';
 
-const Logger = () => {
+const Logger = (props: any) => {
+    const { log } = props;
     return (
         <List>
-            <LoggerItem message="wow" />
+            {log.map((logItem: any) => <LoggerItem message={logItem.requestType} />)}
         </List>
     );
 }

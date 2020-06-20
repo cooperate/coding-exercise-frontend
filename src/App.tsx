@@ -3,7 +3,7 @@ import clsx from "clsx";
 import logo from "./logo.svg";
 import { Box, Container } from "@material-ui/core";
 import Header from "./components/header/Header";
-import Search from "./components/search/Search";
+import Search from "./containers/Search";
 import ColumnAddOptions from "./components/column-add-option/ColumnAddOptions";
 import ColumnAddItem from "./containers/CreateItem";
 import {
@@ -16,6 +16,7 @@ import ColumnContainer from "./containers/Columns";
 import { Provider } from "react-redux";
 import configureStore from "./store";
 import { loadItems } from "./actions/index";
+import Logger from './containers/Log';
 
 const store = configureStore();
 store.dispatch(loadItems());
@@ -57,6 +58,9 @@ const App = () => (
             </div>
             <div className={clsx(styles.gridItem, styles.gridAddItem)}>
               <ColumnAddItem />
+            </div>
+            <div>
+              <Logger />
             </div>
           </Container>
         </Box>

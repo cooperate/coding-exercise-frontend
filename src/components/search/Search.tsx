@@ -45,8 +45,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Search = () => {
+const Search = (props: any) => {
+  const {updateSearchTerm} = props;
   const classes = useStyles();
+  const handleChange = (e: any) => {
+    updateSearchTerm(e.target.value);
+  }
   return (
     <div className={classes.search}>
       <div className={classes.searchIcon}>
@@ -59,6 +63,7 @@ const Search = () => {
           input: classes.inputInput,
         }}
         inputProps={{ "aria-label": "search" }}
+        onChange={handleChange}
       />
     </div>
   );
