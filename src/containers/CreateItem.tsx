@@ -7,7 +7,6 @@ const mapDispatchToProps = (dispatch: any) => ({
 });
 
 const mapStateToProps = (state: any) => {
-  console.log('map state to props with properties', state);
   return {
   itemProperties: state.itemProperties,
 }};

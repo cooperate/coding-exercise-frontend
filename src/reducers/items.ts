@@ -14,7 +14,6 @@ const itemReducer = (state = initialState.items, action: any) => {
         return [...newState];
       }
     case types.CREATE_ITEM_SUCCESS: {
-      console.log('create item', action);
       return [...state, action.item];
     }
     default: 

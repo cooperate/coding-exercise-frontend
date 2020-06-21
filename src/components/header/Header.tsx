@@ -6,7 +6,6 @@ import { useSelector } from 'react-redux';
 const Header = () => {
     const wow = useSelector((state: any) => state.items);
     useEffect(() => {
-        console.log('Header redux useSelector hook', wow);
     }, []);
     return (
     <Box>

@@ -6,13 +6,13 @@ import Header from "./components/header/Header";
 import Search from "./containers/Search";
 import ColumnAddOptions from "./components/column-add-option/ColumnAddOptions";
 import ColumnAddItem from "./containers/CreateItem";
+import ColumnContainer from "./containers/Columns";
 import {
   createMuiTheme,
   ThemeProvider,
   StylesProvider,
 } from "@material-ui/core/styles";
 import styles from "./App.module.css";
-import ColumnContainer from "./containers/Columns";
 import { Provider } from "react-redux";
 import configureStore from "./store";
 import { loadItems } from "./actions/index";

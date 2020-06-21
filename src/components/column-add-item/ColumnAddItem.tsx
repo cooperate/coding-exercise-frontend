@@ -4,7 +4,6 @@ import Button from "../button/Button";
 const ColumnAddItem = (props: any) => {
   const { createItem, itemProperties } = props;
   const handleAddItem = () => {
-    console.log('creating item with properties', itemProperties);
     createItem(itemProperties);
   };
 

@@ -12,9 +12,6 @@ const ColumnAddOptions = (props: any) => {
   const [column, setColumn] = useState(1);
   const { updateItemProperties } = props;
   useEffect(() => {
-    console.log("title", title);
-    console.log("title", message);
-    console.log("title", column);
     updateItemProperties({
       title,
       message,
