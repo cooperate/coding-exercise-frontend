@@ -24,8 +24,8 @@ const ColumnSelector = ({ items, setColumn }: { items: any, setColumn: any }) =>
           onChange={handleChange}
           variant="filled"
         >
-          {items.map((item: any) => (
-            <MenuItem value={item}><Box color="white" fontSize="1.8rem">{item}</Box></MenuItem>
+          {items.map((item: any, index: number) => (
+            <MenuItem key={index} value={item}><Box color="white" fontSize="1.8rem">{item}</Box></MenuItem>
           ))}
         </Select>
         

@@ -9,8 +9,8 @@ const Header = () => {
     }, []);
     return (
     <Box>
-        <Typography color="primary" variant="h1"><Box className={styles.header}>Marvelous!</Box></Typography>
-        <Typography><Box color="#8EFEED">Sort and add items to two lists.</Box></Typography>
+        <Box className={styles.header}><Typography color="primary" variant="h1">Marvelous!</Typography></Box>
+        <Box color="#8EFEED"><Typography>Sort and add items to two lists.</Typography></Box>
     </Box>
 )
     }

@@ -1,10 +1,10 @@
-.header {
+.header > * {
   font-size: 9vw;
   font-style: italic;
 }
 
 @media (min-width: 1600px) {
-  .header {
+  .header > * {
     font-size: 150px;
   }
 }
