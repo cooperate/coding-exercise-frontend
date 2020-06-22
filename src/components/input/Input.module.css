@@ -31,10 +31,6 @@
     background: rgba(255, 255, 255, 0);
 }
 
-.input * {
-    background: #9BA1AB;
-}
-
 .input:hover {
     background: none;
 }

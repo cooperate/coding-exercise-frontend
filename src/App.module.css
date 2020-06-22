@@ -61,7 +61,7 @@
 
   .gridAddItem {
     grid-column: 1 / span 1;
-    grid-row: 12 / span 1;
+    grid-row: 12 / span 2;
   }
 
   .gridLogger {
